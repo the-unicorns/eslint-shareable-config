@@ -1,0 +1,36 @@
+{
+	"name": "@brunomonteiro/eslint-config-react",
+	"version": "1.0.5",
+	"description": "ESLint Shareable configuration module. More info here: https://eslint.org/docs/developer-guide/shareable-configs",
+	"main": "index.js",
+	"scripts": {
+		"test": "tape test/*.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brunomonteirosud/eslint-config-sample.git"
+	},
+	"author": "Bruno Monteiro",
+	"license": "UNLICENSED",
+	"peerDependencies": {
+		"@brunomonteiro/eslint-config-base": ">=1",
+		"@typescript-eslint/eslint-plugin": ">=2",
+		"eslint": ">=6",
+		"eslint-config-prettier": ">=6",
+		"eslint-plugin-jest": ">=22",
+		"eslint-plugin-prettier": ">=3",
+		"eslint-plugin-react": ">=7"
+	},
+	"dependencies": {
+		"@brunomonteiro/eslint-config-base": "^1.0.2",
+		"@typescript-eslint/eslint-plugin": "^2.0.0",
+		"eslint": "^6.3.0",
+		"eslint-config-prettier": "6.3.0",
+		"eslint-plugin-jest": "22.17.0",
+		"eslint-plugin-prettier": "3.1.1",
+		"eslint-plugin-react": "7.14.3"
+	},
+	"devDependencies": {
+		"tape": "^4.11.0"
+	}
+}
