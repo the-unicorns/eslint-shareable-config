@@ -1,5 +1,5 @@
 {
-	"name": "@brunomonteiro/eslint-config-react",
+	"name": "@the-unicorns/eslint-config-react",
 	"version": "1.0.5",
 	"description": "ESLint Shareable configuration module. More info here: https://eslint.org/docs/developer-guide/shareable-configs",
 	"main": "index.js",
@@ -8,12 +8,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/brunomonteirosud/eslint-config-sample.git"
+		"url": "https://github.com/the-unicorns/eslint-shareable-config"
 	},
 	"author": "Bruno Monteiro",
+	"contributors": [
+		"Hans Jakob Emmel"
+	],
 	"license": "UNLICENSED",
 	"peerDependencies": {
-		"@brunomonteiro/eslint-config-base": ">=1",
+		"@the-unicorns/eslint-config-base": ">=1",
 		"@typescript-eslint/eslint-plugin": ">=2",
 		"eslint": ">=6",
 		"eslint-config-prettier": ">=6",
@@ -22,7 +25,7 @@
 		"eslint-plugin-react": ">=7"
 	},
 	"dependencies": {
-		"@brunomonteiro/eslint-config-base": "^1.0.2",
+		"@the-unicorns/eslint-config-base": "^1.0.2",
 		"@typescript-eslint/eslint-plugin": "^2.0.0",
 		"eslint": "^6.3.0",
 		"eslint-config-prettier": "6.3.0",

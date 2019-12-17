@@ -1,5 +1,5 @@
 {
-	"name": "@brunomonteiro/eslint-config-base",
+	"name": "@the-unicorns/eslint-config-base",
 	"version": "1.0.4",
 	"description": "ESLint Shareable configuration module. More info here: https://eslint.org/docs/developer-guide/shareable-configs",
 	"main": "index.js",
@@ -8,9 +8,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/brunomonteirosud/eslint-config-sample.git"
+		"url": "https://github.com/the-unicorns/eslint-shareable-config"
 	},
 	"author": "Bruno Monteiro",
+	"contributors": [
+		"Hans Jakob Emmel"
+	],
 	"license": "UNLICENSED",
 	"peerDependencies": {
 		"@typescript-eslint/eslint-plugin": ">=2",
