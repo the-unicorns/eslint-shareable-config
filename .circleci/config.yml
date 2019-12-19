@@ -23,5 +23,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 
-      # run tests!
-      - run: yarn test
+      - run: yarn test:junit
+
+      - store_test_results:
+          path: test-results
