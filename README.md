@@ -38,7 +38,7 @@ Please make sure to update tests as appropriate.
 
 ## Contributors
 
-    - [View Contributors](https://github.com/the-unicorns/eslint-shareable-config/graphs/contributors)
+- [View Contributors](https://github.com/the-unicorns/eslint-shareable-config/graphs/contributors)
 
 ## License
 
