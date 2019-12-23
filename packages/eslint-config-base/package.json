@@ -4,6 +4,9 @@
 	"description": "Basic ESLint shareable config, for projects not using React",
 	"license": "MIT",
 	"main": "index.js",
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"test": "tape test/*.js"
 	},
