@@ -37,6 +37,22 @@ test('Should use default plugins', function (t) {
     t.end()
 });
 
+const rules = [
+    {name: "@typescript-eslint/explicit-function-return-type", value: "off"},
+    {name: "@typescript-eslint/interface-name-prefix", value: "off"},
+    {name: "@typescript-eslint/explicit-member-accessibility", value: "off"},
+    {name: "@typescript-eslint/no-non-null-assertion", value: "off"},
+    {name: "no-console", value: "error"},
+    {name: "react/no-children-prop", value: "warn"}
+];
+
+test('Should use default rules', function (t) {
+    rules.forEach((item) => {
+        t.equal(config.rules[item.name], item.value, `Rule ${item.name} has the correct value: ${item.value}`);
+    });
+    t.end()
+});
+
 function isString(str) {
     return str !== null && typeof str === 'string'
 }
