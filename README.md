@@ -11,6 +11,13 @@ This project includes 2 packages:
 - `@the-unicorns/eslint-config-base`: Contains the basic ESLint shareable config, for projects not using React.
 - `@the-unicorns/eslint-config-react`: Extends the base configuration and includes some React rules. For projects using React.
 
+### Peer Dependencies
+
+Check each peer dependecy for each package:
+
+- [@the-unicorns/eslint-config-base](./packages/eslint-config-base/README.md)
+- [@the-unicorns/eslint-config-react](./packages/eslint-config-react/README.md)
+
 ```bash
 yarn add -D @the-unicorns/eslint-config-base
 yarn add -D @the-unicorns/eslint-config-react
