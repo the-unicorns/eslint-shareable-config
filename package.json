@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "scripts": {
+    "release": "lerna publish",
     "test": "lerna run test --",
     "test:junit": "yarn test | tap-junit --output test-results -n result.xml"
   },
