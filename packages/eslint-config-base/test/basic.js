@@ -36,6 +36,21 @@ test('Should use default parser options', function (t) {
     t.end()
 });
 
+const defaultEnv = [
+    "browser",
+    "node",
+    "es6"
+];
+
+test('Should correct environment', function (t) {
+    defaultEnv.forEach((item) => {
+        t.ok(config.env[item], `Env ${item} enabled`);
+    });
+    t.end()
+});
+
+
+
 
 
 function isString(str) {
