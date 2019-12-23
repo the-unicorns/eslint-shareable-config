@@ -32,5 +32,6 @@
 		"prettier": "^1.18.2",
 		"tape": "^4.11.0",
 		"typescript": "^3.6.3"
-	}
+	},
+	"gitHead": "ee98c9770067073d80821e21dd3f14a59919a22e"
 }
