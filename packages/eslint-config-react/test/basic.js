@@ -18,6 +18,11 @@ test('Should use default parser', function (t) {
     t.end()
 });
 
+test('Should use default settings', function (t) {
+    t.equal(config.settings.react.version, "detect", "Using default version");
+    t.end()
+});
+
 test('Should use default parser options', function (t) {
     t.equal(config.parserOptions.ecmaVersion, 2018, "Using default ecma version");
     t.equal(config.parserOptions.sourceType, "module", "Using default source type");
@@ -49,6 +54,20 @@ const rules = [
 test('Should use default rules', function (t) {
     rules.forEach((item) => {
         t.equal(config.rules[item.name], item.value, `Rule ${item.name} has the correct value: ${item.value}`);
+    });
+    t.end()
+});
+
+const defaultExtends = [
+    "@the-unicorns/eslint-config-base",
+    "plugin:react/recommended",
+    "plugin:jest/recommended",
+];
+
+test('Should extend default plugns', function (t) {
+    t.equal(config.extends.length, 3, "Default plugins loaded");
+    config.extends.forEach((item) => {
+        t.ok(defaultExtends.includes(item), `Plugin ${item} added`);
     });
     t.end()
 });

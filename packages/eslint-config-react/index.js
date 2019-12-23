@@ -1,7 +1,7 @@
 module.exports = {
     "parser": "@typescript-eslint/parser",
     "extends": [
-        "@vizexplorer/eslint-config-base",
+        "@the-unicorns/eslint-config-base",
         "plugin:react/recommended",
         "plugin:jest/recommended",
     ],
