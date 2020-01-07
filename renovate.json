@@ -1,18 +1,8 @@
 {
   "extends": [
-    "config:base"
-  ],
-  "labels": [
-    "renovate",
-    "dependencies",
-    "automated"
-  ],
-  "reviewers": [
-    "hjemmel",
-    "brunomonteirosud"
-  ],
-  "assignees": [
-    "hjemmel",
-    "brunomonteirosud"
+    "config:base",
+    ":masterIssueApproval",
+    ":labels(renovate, dependencies)",
+    ":assignAndReview(hjemmel)"
   ]
 }
