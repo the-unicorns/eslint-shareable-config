@@ -14,5 +14,14 @@ module.exports = {
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module"
+    },
+    "rules": {
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/interface-name-prefix": "off",
+        "@typescript-eslint/explicit-member-accessibility": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "no-console": "error",
+        "no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}],
+        "@typescript-eslint/no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}]
     }
 };
