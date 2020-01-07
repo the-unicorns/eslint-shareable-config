@@ -3,6 +3,6 @@
     "config:base",
     ":masterIssueApproval",
     ":labels(renovate, dependencies)",
-    ":assignAndReview(hjemmel)"
+    ":assignee(hjemmel)"
   ]
 }
