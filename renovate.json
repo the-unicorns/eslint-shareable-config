@@ -1,5 +1,18 @@
 {
   "extends": [
     "config:base"
+  ],
+  "labels": [
+    "renovate",
+    "dependencies",
+    "automated"
+  ],
+  "reviewers": [
+    "hjemmel",
+    "brunomonteirosud"
+  ],
+  "assignees": [
+    "hjemmel",
+    "brunomonteirosud"
   ]
 }
