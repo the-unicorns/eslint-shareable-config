@@ -8,7 +8,7 @@ test('test basic properties of config', function (t) {
     t.ok(isObject(config.parserOptions));
     t.ok(isObject(config.settings));
     t.equal(config.plugins.length, 2);
-    t.equal(Object.keys(config.rules).length, 6);
+    t.equal(Object.keys(config.rules).length, 1);
     t.equal(Object.keys(config).length, 7);
     t.end()
 });
@@ -43,11 +43,6 @@ test('Should use default plugins', function (t) {
 });
 
 const rules = [
-    {name: "@typescript-eslint/explicit-function-return-type", value: "off"},
-    {name: "@typescript-eslint/interface-name-prefix", value: "off"},
-    {name: "@typescript-eslint/explicit-member-accessibility", value: "off"},
-    {name: "@typescript-eslint/no-non-null-assertion", value: "off"},
-    {name: "no-console", value: "error"},
     {name: "react/no-children-prop", value: "warn"}
 ];
 
@@ -64,7 +59,7 @@ const defaultExtends = [
     "plugin:jest/recommended",
 ];
 
-test('Should extend default plugns', function (t) {
+test('Should extend default plugins', function (t) {
     t.equal(config.extends.length, 3, "Default plugins loaded");
     config.extends.forEach((item) => {
         t.ok(defaultExtends.includes(item), `Plugin ${item} added`);
