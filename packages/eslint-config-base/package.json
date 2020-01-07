@@ -1,6 +1,6 @@
 {
 	"name": "@the-unicorns/eslint-config-base",
-	"version": "1.0.9",
+	"version": "1.1.0",
 	"description": "Basic ESLint shareable config, for projects not using React",
 	"license": "MIT",
 	"main": "index.js",
