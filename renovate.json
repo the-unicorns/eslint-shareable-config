@@ -3,6 +3,7 @@
     "config:base",
     ":masterIssueApproval",
     ":labels(renovate, dependencies)",
-    ":assignee(hjemmel)"
+    ":assignee(hjemmel)",
+    "group:linters"
   ]
 }
