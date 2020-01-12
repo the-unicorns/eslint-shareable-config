@@ -1,13 +1,11 @@
 version: 2
-
-defaults: &defaults
-  docker:
-    - image: circleci/node:erbium
-  working_directory: ~/repo
-
 jobs:
-  test:
-    <<: *defaults
+  build:
+    docker:
+      - image: circleci/node:erbium
+
+    working_directory: ~/repo
+
     steps:
       - checkout
 
@@ -29,38 +27,3 @@ jobs:
 
       - store_test_results:
           path: test-results
-
-      - persist_to_workspace:
-          root: ~/repo
-          paths: .
-  publish:
-    <<: *defaults
-    steps:
-      - attach_workspace:
-          at: ~/repo
-      - run:
-          name: Avoid hosts unknown for github
-          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-      - run:
-          name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
-      - run: echo "access=public" >> ~/repo/.npmrc
-      - run:
-          name: Publish package
-          command: yarn release
-
-workflows:
-  version: 2
-  test-publish:
-    jobs:
-      - test:
-          filters:
-            branches:
-              only:
-                - /.*/
-      - publish:
-          requires:
-            - test
-          filters:
-            branches:
-              only: master
