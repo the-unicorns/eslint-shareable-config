@@ -5,6 +5,5 @@
     ":labels(renovate, dependencies)",
     ":assignee(hjemmel)",
     "group:linters"
-  ],
-  "masterIssueAutoclose": true
+  ]
 }
