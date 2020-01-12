@@ -50,6 +50,10 @@ workflows:
   version: 2
   test-publish:
     jobs:
+      - test:
+          branches:
+            only:
+              - /.*/
       - publish:
           requires:
             - test
