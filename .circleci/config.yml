@@ -51,12 +51,13 @@ workflows:
   test-publish:
     jobs:
       - test:
-        branches:
-          only:
-            - /.*/
+          filters:
+            branches:
+              only:
+                - /.*/
       - publish:
-        requires:
-          - test
-        filters:
-          branches:
-            only: master
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
