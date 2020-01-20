@@ -8,7 +8,7 @@ test('test basic properties of config', function (t) {
     t.ok(isObject(config.parserOptions));
     t.ok(isObject(config.settings));
     t.equal(config.plugins.length, 2);
-    t.equal(Object.keys(config.rules).length, 1);
+    t.equal(Object.keys(config.rules).length, 2);
     t.equal(Object.keys(config).length, 7);
     t.end()
 });
@@ -43,7 +43,8 @@ test('Should use default plugins', function (t) {
 });
 
 const rules = [
-    {name: "react/no-children-prop", value: "warn"}
+    {name: "react/no-children-prop", value: "warn"},
+    {name: "react/prop-types", value: 0}
 ];
 
 test('Should use default rules', function (t) {

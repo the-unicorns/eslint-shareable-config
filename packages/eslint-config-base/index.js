@@ -21,7 +21,7 @@ module.exports = {
         "@typescript-eslint/explicit-member-accessibility": "off",
         "@typescript-eslint/no-non-null-assertion": "off",
         "no-console": "error",
-        "no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}],
-        "@typescript-eslint/no-unused-vars": ["warn", {"argsIgnorePattern": "^_"}]
+        "no-unused-vars": ["error", {"argsIgnorePattern": "^_"}],
+        "@typescript-eslint/no-unused-vars": ["error", {"argsIgnorePattern": "^_"}]
     }
 };

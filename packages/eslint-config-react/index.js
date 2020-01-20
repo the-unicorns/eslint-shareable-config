@@ -29,6 +29,7 @@ module.exports = {
         "jest"
     ],
     "rules": {
-        "react/no-children-prop": "warn"
+        "react/no-children-prop": "warn",
+        "react/prop-types": 0 // using typescript to manage types
     }
 };

@@ -56,8 +56,8 @@ const rules = [
     {name: "@typescript-eslint/interface-name-prefix", value: "off"},
     {name: "@typescript-eslint/explicit-member-accessibility", value: "off"},
     {name: "@typescript-eslint/no-non-null-assertion", value: "off"},
-    {name: "@typescript-eslint/no-unused-vars", value: ["warn", {"argsIgnorePattern": "^_"}]},
-    {name: "no-unused-vars", value: ["warn", {"argsIgnorePattern": "^_"}]},
+    {name: "@typescript-eslint/no-unused-vars", value: ["error", {"argsIgnorePattern": "^_"}]},
+    {name: "no-unused-vars", value: ["error", {"argsIgnorePattern": "^_"}]},
     {name: "no-console", value: "error"},
 ];
 
