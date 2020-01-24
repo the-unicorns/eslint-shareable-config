@@ -1,7 +1,7 @@
 {
   "extends": [
     "config:base",
-    ":masterIssue"
+    ":masterIssue",
     ":masterIssueApproval",
     ":labels(renovate, dependencies)",
     ":assignee(hjemmel)",
