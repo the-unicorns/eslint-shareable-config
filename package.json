@@ -10,7 +10,7 @@
     "test:junit": "yarn test | tap-junit --output test-results -n result.xml"
   },
   "devDependencies": {
-    "lerna": "3.21.0",
+    "lerna": "3.22.1",
     "tap-junit": "3.1.2"
   }
 }
