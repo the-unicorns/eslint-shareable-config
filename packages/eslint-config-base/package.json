@@ -33,7 +33,7 @@
 		"eslint": "6.8.0",
 		"eslint-plugin-prettier": "3.1.4",
 		"prettier": "1.19.1",
-		"tape": "4.13.3",
+		"tape": "5.0.1",
 		"typescript": "3.9.7"
 	},
 	"gitHead": "3e20ad3de47d3e0ee370a07473cd180741ccec1b"
