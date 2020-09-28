@@ -19,7 +19,7 @@ test('Should use default parser', function (t) {
 });
 
 test('Should use default settings', function (t) {
-    t.equal(config.settings.react.version, "detect", "Using default version");
+    t.equal(config.settings.react.version, "16.8", "Using default version");
     t.end()
 });
 

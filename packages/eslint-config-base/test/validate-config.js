@@ -1,16 +1,20 @@
-const eslint = require('eslint');
-const test = require('tape');
+const eslint = require("eslint");
+const test = require("tape");
 
-test('load config in eslint to validate all rule syntax is correct', function (t) {
-    const CLIEngine = eslint.CLIEngine;
+test("load config in eslint to validate all rule syntax is correct", async function(t) {
+  const ESLint = eslint.ESLint;
 
-    const cli = new CLIEngine({
-        useEslintrc: false,
-        configFile: 'index.js'
-    });
+  const lint = new ESLint({
+    useEslintrc: false,
+    overrideConfigFile: "index.js",
+  });
 
-    const code = 'const foo = 1;\nconst bar = function(foo: int): int {\n  foo + 1;\n};\nbar(foo);\n';
+  const code =
+    "const foo = 1;\nconst bar = function (foo) {\n  foo + 1;\n};\nbar(foo);\n";
 
-    t.equal(cli.executeOnText(code).errorCount, 0);
-    t.end();
+  const result = await lint.lintText(code);
+  const errors = ESLint.getErrorResults(result);
+
+  t.equal(errors.length, 0);
+  t.end();
 });
