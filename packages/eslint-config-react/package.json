@@ -1,6 +1,6 @@
 {
 	"name": "@the-unicorns/eslint-config-react",
-	"version": "1.2.0",
+	"version": "2.0.0",
 	"description": "Extends the base configuration and includes some React rules. For projects using React",
 	"license": "MIT",
 	"main": "index.js",
@@ -25,7 +25,7 @@
 		"eslint-plugin-react": ">=7"
 	},
 	"dependencies": {
-		"@the-unicorns/eslint-config-base": "^1.2.0",
+		"@the-unicorns/eslint-config-base": "^2.0.0",
 		"eslint-config-prettier": "6.12.0"
 	},
 	"devDependencies": {
