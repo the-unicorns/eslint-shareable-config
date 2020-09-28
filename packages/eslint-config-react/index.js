@@ -14,6 +14,9 @@ module.exports = {
     },
     "settings": {
         "react": {
+            "version": "16.8" // first version with hooks
+        },
+        jest: {
             "version": "detect"
         }
     },
