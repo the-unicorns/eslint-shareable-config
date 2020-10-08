@@ -32,7 +32,7 @@
 		"@typescript-eslint/eslint-plugin": "4.3.0",
 		"eslint": "7.10.0",
 		"eslint-plugin-jest": "24.0.2",
-		"eslint-plugin-react": "7.21.2",
+		"eslint-plugin-react": "7.21.3",
 		"tape": "5.0.1"
 	},
 	"gitHead": "3e20ad3de47d3e0ee370a07473cd180741ccec1b"
