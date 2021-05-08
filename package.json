@@ -11,6 +11,6 @@
   },
   "devDependencies": {
     "lerna": "4.0.0",
-    "tap-junit": "4.0.0"
+    "tap-junit": "4.2.0"
   }
 }

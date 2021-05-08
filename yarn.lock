@@ -5366,14 +5366,13 @@ table@^6.0.4:
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
 
-tap-junit@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/tap-junit/-/tap-junit-4.0.0.tgz#615c131d83b841932be3b3f554a0c38701198928"
-  integrity sha512-EmKw1r69RNDIN4O4Kc+lulI0tRxCIsflB3QtD4ndlQzyYkSHbiLB1sRJfzSl/ShlVtyE+QjnvWzRYr4LqNUWlg==
+tap-junit@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/tap-junit/-/tap-junit-4.2.0.tgz#885497c8543403392b0ffa6a09eaa9c5698de9f3"
+  integrity sha512-XqCMJJHS3YR3YJuO5BrqZgqQyVCs5IgEDe5eUIqjt4TYZdemxy3MjwS3sK7nipon+Cp52DSM/BHSaVNoY2U8fw==
   dependencies:
     minimist "1.2.5"
     tap-parser "10.1.0"
-    xmlbuilder "15.1.0"
     xmlbuilder2 "2.4.0"
 
 tap-parser@10.1.0:
@@ -5887,11 +5886,6 @@ xmlbuilder2@2.4.0:
     "@oozcitak/util" "8.3.8"
     "@types/node" "14.6.2"
     js-yaml "3.14.0"
-
-xmlbuilder@15.1.0:
-  version "15.1.0"
-  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-15.1.0.tgz#4c4c9109180937baeb839978b590250be09a4aef"
-  integrity sha512-xae5hmPQnmSFhpiuV3NGXq+FWGOvWy/rIzxVLnRtSSABbPZWltTQCe6WlHDpCq5pGvnGwNsWnS1FdkW7Tx9FNQ==
 
 xtend@~4.0.1:
   version "4.0.2"
