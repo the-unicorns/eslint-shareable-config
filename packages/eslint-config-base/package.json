@@ -34,7 +34,7 @@
 		"eslint-plugin-prettier": "3.4.0",
 		"prettier": "2.4.1",
 		"tape": "5.4.1",
-		"typescript": "4.2.4"
+		"typescript": "4.5.5"
 	},
 	"gitHead": "3e20ad3de47d3e0ee370a07473cd180741ccec1b"
 }
