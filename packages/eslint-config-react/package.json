@@ -33,7 +33,7 @@
 		"eslint": "7.23.0",
 		"eslint-plugin-jest": "24.3.6",
 		"eslint-plugin-react": "7.28.0",
-		"tape": "5.2.2"
+		"tape": "5.4.1"
 	},
 	"gitHead": "3e20ad3de47d3e0ee370a07473cd180741ccec1b"
 }
