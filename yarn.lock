@@ -972,10 +972,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.1.tgz#283f669ff76d7b8260df8ab7a4262cc83d988256"
   integrity sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==
 
-"@types/node@14.6.2":
-  version "14.6.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.6.2.tgz#264b44c5a28dfa80198fc2f7b6d3c8a054b9491f"
-  integrity sha512-onlIwbaeqvZyniGPfdw/TEhKIh79pz66L1q06WUQqJLnAb6wbjvOtepLYTGHTqzdXgBYIE3ZdmqHDGsRsbBz7A==
+"@types/node@*":
+  version "17.0.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.12.tgz#f7aa331b27f08244888c47b7df126184bc2339c5"
+  integrity sha512-4YpbAsnJXWYK/fpTVFlMIcUIho2AYCi4wg5aNPrG1ng7fn/1/RZfCIpRCiBX+12RVa34RluilnvCqD+g3KiSiA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -5518,14 +5518,14 @@ table@^6.0.4:
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
 
-tap-junit@4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/tap-junit/-/tap-junit-4.2.0.tgz#885497c8543403392b0ffa6a09eaa9c5698de9f3"
-  integrity sha512-XqCMJJHS3YR3YJuO5BrqZgqQyVCs5IgEDe5eUIqjt4TYZdemxy3MjwS3sK7nipon+Cp52DSM/BHSaVNoY2U8fw==
+tap-junit@5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/tap-junit/-/tap-junit-5.0.1.tgz#d91111c6debc9db4d0a5b48e35e8e5d390732098"
+  integrity sha512-VSKr0y3T8vtxazjmYVEv3UuSq8ZhS8OlyIBMidNIVQaTuy8E9iXr+n0WGI53wov414h+FALj0/8tDSi4JsZ4zA==
   dependencies:
     minimist "1.2.5"
     tap-parser "10.1.0"
-    xmlbuilder2 "2.4.0"
+    xmlbuilder2 "2.4.1"
 
 tap-parser@10.1.0:
   version "10.1.0"
@@ -6050,15 +6050,15 @@ write-pkg@^4.0.0:
     type-fest "^0.4.1"
     write-json-file "^3.2.0"
 
-xmlbuilder2@2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/xmlbuilder2/-/xmlbuilder2-2.4.0.tgz#fb6c5171bef1bcb984c88cfef5210e17b7b841cd"
-  integrity sha512-KrOVUGD65xTQ7ZA+GMQGdBSpe1Ufu5ylCQSYVk6QostySDkxPmAQ0WWIu7dR3JjLfVbF22RFQX7KyrZ6VTLcQg==
+xmlbuilder2@2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/xmlbuilder2/-/xmlbuilder2-2.4.1.tgz#899c783a833188c5a5aa6f3c5428a3963f3e479d"
+  integrity sha512-vliUplZsk5vJnhxXN/mRcij/AE24NObTUm/Zo4vkLusgayO6s3Et5zLEA14XZnY1c3hX5o1ToR0m0BJOPy0UvQ==
   dependencies:
     "@oozcitak/dom" "1.15.8"
     "@oozcitak/infra" "1.0.8"
     "@oozcitak/util" "8.3.8"
-    "@types/node" "14.6.2"
+    "@types/node" "*"
     js-yaml "3.14.0"
 
 xtend@~4.0.1:
