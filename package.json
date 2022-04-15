@@ -5,12 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "release": "lerna publish",
-    "test": "lerna run test --",
-    "test:junit": "yarn test | tap-junit --output test-results -n result.xml"
-  },
-  "devDependencies": {
-    "lerna": "4.0.0",
-    "tap-junit": "5.0.1"
+    "release": "pnpm publish",
+    "test": "pnpm test -r"
   }
 }
