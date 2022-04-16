@@ -5,7 +5,13 @@
     "packages/*"
   ],
   "scripts": {
-    "release": "pnpm publish",
+    "changeset": "changeset",
+    "version": "changeset version && pnpm install --lockfile-only",
+    "release": "changeset publish",
     "test": "pnpm test -r"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.4.4",
+    "@changesets/cli": "^2.22.0"
   }
 }
